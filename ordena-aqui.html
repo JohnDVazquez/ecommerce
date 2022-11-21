@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <style>
+        .img {
+            font-weight: 100px;
+            height: 100px;
+        }
+    </style>
+    <header>
+        <nav>
+            <table>
+                <tr>
+                    <th><a href="./index.html">Inicio</a></th>
+                    <th><a href="./ordena-aqui.html">Ordena aquí</a></th>
+                    <th><a href="./conocenos.html">Conocenos</a></th>
+                    <th><a href="./contacto.html">Contacto</a></th>
+                    <th><a href="./preguntas-frecuentes.html">Preguntas frecuentes</a></th>
+
+                </tr>
+            </table>
+        </nav>
+        <div>
+            <table>
+                <th><img src="./imagenes/reposteria logo.jpg" class="img" alt="Logo"></th>
+            </table>
+        </div>
+    </header>
+    <main>
+        <h2>Tipo de pastel</h2>
+        <form action="">
+            <div>Pastel de chocolate</div>
+            <input type="checkbox">
+            <div>Pastel de ferrero</div>
+            <input type="checkbox">
+            <div>Pastel de galleta oreo</div>
+            <input type="checkbox">
+            <div>Pastel de fresa</div>
+            <input type="checkbox">
+            <div>Cheescake</div>
+            <input type="checkbox">
+            <div>Pastel de Piñon</div>
+            <input type="checkbox">
+        </form>
+        <h2>Tamaño del pastel</h2>
+        <form action="">
+            <div>Grande (250 personas)</div>
+            <input type="radio">
+            <div>Mediano (100 personas)</div>
+            <input type="radio">
+            <div>Chico (50 personas)</div>
+            <input type="radio">
+            <div>Familiar (10 personas)</div>
+            <input type="radio">
+        </form>
+        <h2>Datos de envio</h2>
+        <form action="">
+            <input placeholder="Nombre de la calle" type="text">
+            <input placeholder="Numero exterior" type="number">
+            <input placeholder="Numero interior" type="number">
+            <input placeholder="Ciudad" type="text">
+            <input placeholder="Estado" type="text">
+            <input placeholder="Codigo postal" type="number">
+            <input type="submit" value="Guardar">
+        </form>
+        <h2>Forma de pago</h2>
+        <form action="">
+            <select name="Forma de pago" id="">
+                <option value="Transferencia electronica">Transferencia electronica</option>
+                <option value="Tarjeta de credito/debito">Tarjeta de credito/debito</option>
+                <option value="Deposito en efectivo">Deposito en efectivo</option>
+            </select>
+            <input type="submit" value="Pedir">
+        </form>
+    </main>
+</body>
+
+</html>
