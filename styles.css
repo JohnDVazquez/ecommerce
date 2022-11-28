@@ -1,0 +1,74 @@
+.img {
+    font-weight: 100px;
+    height: 100px;
+}
+
+.img-2 {
+    height: 150px;
+    font-weight: 150px;
+}
+
+.img-3 {
+    height: 300px;
+    font-weight: 300px;
+}
+
+.img-4 {
+    height: 200px;
+    font-weight: 200px;
+}
+
+.img-5 {
+    height: 200px;
+    font-weight: 200px;
+}
+
+.img-6 {
+    height: 250px;
+    font-weight: 250px;
+}
+
+.img-7 {
+    height: 400px;
+    font-weight: 400px;
+}
+
+.contenedor {
+    display: flex;
+}
+
+.img-8 {
+    height: 100px;
+    font-weight: 100px;
+}
+
+.img-9 {
+    height: 100px;
+    font-weight: 100px;
+}
+
+.img-10 {
+    height: 100px;
+    font-weight: 100px;
+}
+
+.img-11 {
+    height: 60px;
+    font-weight: 60px;
+}
+
+#navegacion{
+    text-align: center;
+}
+
+p {
+    text-align: left;
+}
+
+table{
+    background-color: aqua;
+}
+
+#especialidad{
+    color: coral;
+}
