@@ -12,7 +12,7 @@
 
 <body>
     <header>
-        <audio src="./audio/5 - The Score - Believe.mp3" controls></audio>
+        <audio src="./audio/5 - The Score - Believe.mp3" controls hidden></audio>
         <nav>
             <ul class="navbar">
                 <li><a href="./index.html">Inicio</a></li>
@@ -24,38 +24,38 @@
             </ul>
         </nav>
         <div>
-            <img src="./imagenes/reposteria logo.jpg" class="Logo" alt="Logo">
+            <img id="logo" src="./imagenes/reposteria logo.jpg" class="Logo" alt="Logo">
         </div>
     </header>
     <main>
         <div>
             <h2>Los mas pedidos</h2>
-            <ul class="MasPedidos">
-                <li><img src="./imagenes/pastel de chocolate.jpg" class="img-2" alt="Pastel de chocolate">
-                    <p>Pastel de chocolate</p>
-                </li>
-                <li><img src="./imagenes/pastel de ferrero.jpg" class="img-3" alt="Pastel de ferrero">
-                    <p>Pastel de ferrero</p>
-                </li>
-                <li><img src="./imagenes/pastel de galleta oreo.png" class="img-4" alt="Pastel de galleta oreo">
-                    <p>Pastel de galleta oreo</p>
-                </li>
-                <li><img src="./imagenes/pastel de fresa.jpg" class="img-5" alt="Pastel de fresa">
-                    <p>Pastel de fresa</p>
-                </li>
-                <li><img src="./imagenes/cheescake.jpeg" class="img-6" alt="Cheescake">
-                    <p>Cheescake tradicional</p>
-                </li>
-            </ul>
+            <div class="contmaspedidos">
+                <div class="contimg-1">
+                    <p class="timg-1">Pastel de chocolate</p>
+                </div>
+                <div class="contimg-2">
+                    <p class="timg-2">Pastel de Ferrero</p>
+                </div>
+                <div class="contimg-3">
+                    <p class="timg-3">Pastel de Galleta Oreo</p>
+                </div>
+                <div class="contimg-4">
+                    <p class="timg-4">Pastel de Fresa</p>
+                </div>
+                <div class="contimg-5">
+                    <p class="timg-5">Cheescake Tradicional</p>
+                </div>
+            </div>
         </div>
         <h1 id="especialidad">Nuestra especialidad</h1>
-        <div class="contenedor">
-            <img src="./imagenes/Pastel de piñon.jpg" class="img-7" alt="Pastel de piñon">
-            <p>
-                El pastel de piñon es nuestra especialidad
-                desde el año en que se fundo nuestra reposteria
-            </p>
+        <div class="contespecialidad">
+            <img src="./imagenes/Pastel de piñon.jpg" alt="Pastel de Piñon">
         </div>
+        <p class="tespecialidad" for="contespecialidad">
+            El pastel de piñon es nuestra especialidad
+            desde el año en que se fundo nuestra reposteria
+        </p>
         <div>
             <h3>Datos personales</h3>
             <form action="">
@@ -88,7 +88,7 @@
         </div>
         <!--Mi aside no se mueve con la pagina :) -->
         <aside>
-            <img src="./imagenes/chat.png" class="img-11" alt="whatsapp contacto">
+            <img src="./imagenes/chat.png" class="imgaside" alt="whatsapp contacto">
         </aside>
     </main>
     <footer>
