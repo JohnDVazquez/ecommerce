@@ -1,0 +1,98 @@
+.navbar {
+    display: flex;
+    min-height: 25px;
+    max-height: 60px;
+    gap: 1rem;
+    padding: 5px;
+    margin: 10px;
+    list-style: none;
+    background: #ade4b5;
+}
+
+.navbar li {
+    text-align: center;
+    padding: 2px;
+}
+
+#logo {
+    width: 8rem;
+    height: 8rem;
+    border-radius: 40%;
+}
+
+h2 {
+    text-align: center;
+}
+
+.contmaspedidos {
+    display: inline-flex;
+    flex-wrap: wrap;
+    flex: 200px;
+    gap: 10px;
+}
+
+.contimg-1 {
+    background-image: url("./imagenes/pastel de chocolate.jpg");
+    background-size: cover;
+    width: 300px;
+    height: 200px;
+}
+
+.contimg-2 {
+    background-image: url("./imagenes/pastel de ferrero.jpg");
+    background-size: cover;
+    width: 300px;
+    height: 200px;
+}
+
+.contimg-3 {
+    background-image: url("./imagenes/pastel de galleta oreo.png");
+    background-size: cover;
+    width: 300px;
+    height: 200px;
+}
+
+.contimg-4 {
+    background-image: url("./imagenes/pastel de fresa.jpg");
+    background-size: cover;
+    width: 300px;
+    height: 200px;
+}
+
+.contimg-5 {
+    background-image: url("./imagenes/cheescake.jpeg");
+    background-size: cover;
+    width: 300px;
+    height: 200px;
+}
+
+.timg-1,
+.timg-2,
+.timg-3,
+.timg-4,
+.timg-5 {
+    text-align: center;
+    color: transparent rgb(0, 0, 0, 0.6);
+    background-color: rgba(255, 255, 255, 0.7);
+}
+
+#especialidad {
+    text-align: center;
+}
+
+.contespecialidad {
+    text-align: center;
+}
+
+.tespecialidad {
+    text-align: center;
+    margin-bottom: 5rem;
+}
+
+body {
+    background: linear-gradient(#fff18c, #71dbd2);
+}
+
+.imgaside {
+    width: 50px;
+}
