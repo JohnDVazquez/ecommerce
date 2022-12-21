@@ -1,0 +1,14 @@
+.preguntasFrecuentes {
+    margin: 10px;
+}
+
+h4 {
+@extend .preguntasFrecuentes;
+text-align: center;
+}
+
+h4+ol{
+    @extend h4;
+    border-style: solid;
+    border-color: coral;
+}
