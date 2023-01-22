@@ -50,7 +50,7 @@ console.log("Mi gato es de color " + color + ", su comida favorita es el " +
 )
 
 //ejercicio 5
-const descripcion = ["Jonathan", 22, 2676406, educacion=["Ing. mecanica y electrica", " y programación"]
-]
-const [nombre, edad, , estudios]=descripcion;
-console.log("Hola, me llamo " + nombre + ", tengo " + edad + " años de edad y estoy tratando de estudiar " + estudios + " sin morir en el intento :)")
+//const descripcion = ["Jonathan", 22, 2676406, educacion=["Ing. mecanica y electrica", " y programación"]
+//]
+//const [nombre, edad, , estudios]=descripcion;
+//console.log("Hola, me llamo " + nombre + ", tengo " + edad + " años de edad y estoy tratando de estudiar " + estudios + " sin morir en el intento :)")
