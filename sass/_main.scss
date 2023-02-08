@@ -1,0 +1,122 @@
+.main-index {
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-bottom: 1rem;
+
+    section {
+        div {
+            h2 {
+                text-align: center;
+            }
+
+            .contmaspedidos {
+                display: inline-flex;
+                flex-wrap: wrap;
+                flex: 200px;
+                gap: 10px;
+
+                .contimg-1 {
+                    background-image: url("/imagenes/pastel de chocolate.jpg");
+                    background-size: cover;
+                    width: 19rem;
+                    height: 11rem;
+                    margin: 1rem;
+
+                    .timg-1 {
+                        text-align: center;
+                        color: transparent rgb(0, 0, 0, 0.6);
+                        background-color: rgba(255, 255, 255, 0.7);
+                    }
+                }
+
+                .contimg-2 {
+                    background-image: url("/imagenes/pastel de ferrero.jpg");
+                    background-size: cover;
+                    width: 19rem;
+                    height: 11rem;
+                    margin: 1rem;
+
+                    .timg-2 {
+                        text-align: center;
+                        color: transparent rgb(0, 0, 0, 0.6);
+                        background-color: rgba(255, 255, 255, 0.7);
+                    }
+                }
+
+                .contimg-3 {
+                    background-image: url("/imagenes/pastel de galleta oreo.png");
+                    background-size: cover;
+                    width: 19rem;
+                    height: 11rem;
+                    margin: 1rem;
+
+                    .timg-3 {
+                        text-align: center;
+                        color: transparent rgb(0, 0, 0, 0.6);
+                        background-color: rgba(255, 255, 255, 0.7);
+                    }
+                }
+
+                .contimg-4 {
+                    background-image: url("/imagenes/pastel de fresa.jpg");
+                    background-size: cover;
+                    width: 19rem;
+                    height: 11rem;
+                    margin: 1rem;
+
+                    .timg-4 {
+                        text-align: center;
+                        color: transparent rgb(0, 0, 0, 0.6);
+                        background-color: rgba(25, 144, 173, 0.1);
+                    }
+                }
+
+                .contimg-5 {
+                    background-image: url("/imagenes/cheescake.jpeg");
+                    background-size: cover;
+                    width: 19rem;
+                    height: 11rem;
+                    margin: 1rem;
+
+                    .timg-5 {
+                        text-align: center;
+                        color: transparent rgb(0, 0, 0, 0.6);
+                        background-color: rgba(255, 255, 255, 0.7);
+                    }
+                }
+            }
+
+        }
+    }
+
+    section {
+        text-align: center;
+
+        div {
+
+            .cardEspecialidad {
+                position: relative;
+                left: 32%;
+                width: 30rem;
+
+                .cardFondo {
+                    background-color: blue;
+                }
+            }
+        }
+    }
+        
+
+    aside{
+        position: sticky;
+        bottom: 1rem;
+        width: max-content;
+        background-color: none;
+        border-radius: 50%;
+        .imgaside{
+            width: 4rem;
+        }
+    }
+}
+
+

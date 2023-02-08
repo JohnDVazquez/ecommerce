@@ -1,0 +1,116 @@
+* {
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+        "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    position: sticky;
+    top: 1px;
+    z-index: 5;
+
+    nav {
+
+            .logo {
+                width: 4rem;
+                border-radius: 10px;
+                border: black 2px solid;
+                margin: 1rem;
+            }
+            .btncarrito{
+                height: 5rem;
+                width: 10rem;
+                border-radius: 5px;
+                border: white 2px solid;
+                color: black;
+            }
+    }
+}
+
+body{
+background-image: url('imagenes/fondoformul.jpg');
+}
+
+main{
+    
+        .form-register{
+            width: 30rem;
+            background: #24303c;
+            padding: 2rem;
+            margin: auto;
+            margin-top: 4rem;
+            margin-bottom: 4rem;
+            border-radius: 4px;
+            color: white;
+            box-shadow: 7px 13px 37px #000;
+
+            h4{
+                font-size: 20px;
+                text-align: center;
+                margin-bottom: 1rem;
+            }
+
+            .controls{
+                width: 100%;
+                background: #24303c;
+                padding: 1rem;
+                border-radius: 4px;
+                margin-bottom: 1rem;
+                border: 1px solid #1f53c5;
+                color: white;
+            }
+
+            p{
+                height: 4rem;
+                text-align: center;
+                line-height: 4rem;
+            }
+
+            a{
+                color: white;
+                text-decoration: none;
+
+            }
+            a:hover{
+                color: white;
+                text-decoration: underline;
+            }
+
+            .boton-{
+                width: 100%;
+                background: #1f53c5;
+                padding: 1rem;
+                color: white;
+                margin-bottom: 1rem;
+
+            }
+        }
+    
+}
+
+footer {
+    padding-top: 2rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    background-color: #FCC2FC;
+    *{background-color: #FCC2FC;}
+
+    
+        .grupo1 {
+            padding-bottom: 1rem;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-gap: 50px;
+            .box{
+                iframe{
+                    width: 100%;
+                    height: 80%;
+                    display: flex;
+                    justify-content: center;
+                }
+            }
+        }
+    
+}

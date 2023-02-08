@@ -1,0 +1,23 @@
+
+header {
+    position: sticky;
+    top: 1px;
+    z-index: 5;
+
+    nav {
+
+            .logo {
+                width: 4rem;
+                border-radius: 10px;
+                border: black 2px solid;
+                margin: 1rem;
+            }
+            .btncarrito{
+                height: 5rem;
+                width: 10rem;
+                border-radius: 5px;
+                border: white 2px solid;
+                color: black;
+            }
+    }
+}

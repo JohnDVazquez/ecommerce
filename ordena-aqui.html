@@ -1,86 +1,149 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ordena aqui</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Reposteria</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <link rel="stylesheet" href="ordenaaqui.css">
     <link rel="shortcut icon" href="./imagenes/reposteria logo.jpg">
 </head>
 
 <body>
     <header>
-        <nav>
-            <ul class="navbar">
-                <li><a href="./index.html">Inicio</a></li>
-                <li><a href="./ordena-aqui.html">Ordena aquí</a></li>
-                <li><a href="./conocenos.html">Conocenos</a></li>
-                <li><a href="./contacto.html">Contacto</a></li>
-                <li><a href="./preguntas-frecuentes.html">Preguntas frecuentes</a></li>
-                <li>Buscar</li>
-            </ul>
-        </nav>
         <div>
-            <img id="logo" src="./imagenes/reposteria logo.jpg" class="Logo" alt="Logo">
+            <nav id="navB" class="navbar navbar-expand-lg bg-light" style="display: flex;">
+                <div class="container-fluid">
+                    <div>
+                        <a href="./index.html">
+                            <img src="./imagenes/reposteria logo.jpg" class="logo" alt="Logo de la pasteleria">
+                        </a>
+                    </div>
+                    <a class="navbar-brand" href="./index.html">Inicio</a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="./ordena-aqui.html">Ordena Aqui</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./cotizar.html">Cotizar</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./conocenos.html">Conocenos</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./preguntas-frecuentes.html">Preguntas Frecuentes</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div>
+                        <a href="" class="btncarrito">
+                            <iconify-icon icon="ic:outline-shopping-cart"></iconify-icon>
+                        </a>
+                    </div>
+                </div>
+            </nav>
+
         </div>
+
     </header>
     <main>
-        <div class="grid_container">
-            <div><img class="item1" src="./imagenes/Pastel c meme.png" alt="Pastel con diseño de meme"></div>
-            <div ><img class="item2" src="./imagenes/pastel chocolate y fresas.PNG" alt="Pastel de chocolate con fresas"></div>
-            <div ><img class="item3" src="./imagenes/Pastel estilo campestre.jpg" alt="Pastel con diseño de vagoneta vw clasica"></div>
-            <div ><img class="item4" src="./imagenes/Pastel de cafe.png" alt="Pastel de cafe"></div>
-            <div ><img class="item5" src="./imagenes/Pastel de patricio.jpg" alt="Pastel con diseño de patricio"></div>
-            <div ><img class="item6" src="./imagenes/Pastel de moka.jpg" alt="Pastel de moka"></div>
-        </div>
-        <h2>Tipo de pastel</h2>
-        <form action="">
-            <div>Pastel de chocolate</div>
-            <input type="checkbox">
-            <div>Pastel de ferrero</div>
-            <input type="checkbox">
-            <div>Pastel de galleta oreo</div>
-            <input type="checkbox">
-            <div>Pastel de fresa</div>
-            <input type="checkbox">
-            <div>Cheescake</div>
-            <input type="checkbox">
-            <div>Pastel de Piñon</div>
-            <input type="checkbox">
-        </form>
-        <h2>Tamaño del pastel</h2>
-        <form action="">
-            <div>Grande (250 personas)</div>
-            <input type="radio">
-            <div>Mediano (100 personas)</div>
-            <input type="radio">
-            <div>Chico (50 personas)</div>
-            <input type="radio">
-            <div>Familiar (10 personas)</div>
-            <input type="radio">
-        </form>
-        <h2>Datos de envio</h2>
-        <form action="">
-            <input placeholder="Nombre de la calle" type="text">
-            <input placeholder="Numero exterior" type="number">
-            <input placeholder="Numero interior" type="number">
-            <input placeholder="Ciudad" type="text">
-            <input placeholder="Estado" type="text">
-            <input placeholder="Codigo postal" type="number">
-            <input type="submit" value="Guardar">
-        </form>
-        <h2>Forma de pago</h2>
-        <form action="">
-            <select name="Forma de pago" id="">
-                <option value="Transferencia electronica">Transferencia electronica</option>
-                <option value="Tarjeta de credito/debito">Tarjeta de credito/debito</option>
-                <option value="Deposito en efectivo">Deposito en efectivo</option>
-            </select>
-            <input type="submit" value="Pedir">
-        </form>
+        <p class="titulo">Elige el pastel de tu preferencia, si necesitas algo personalizado llena nuestro <a
+                href="cotizar.html">formulario</a> y a la brevedad nos pondremos en contacto</p>
+        <section>
+            <div class="galeria">
+                <div class="foto1">
+                    <p class="pie1">Pastel con diseño de meme</p>
+                </div>
+                <div class="foto2">
+                    <p class="pie2">Pastel de chocolate y fresas</p>
+                </div>
+                <div class="foto3">
+                    <p class="pie3">Pastel de VW</p>
+                </div>
+                <div class="foto4">
+                    <p class="pie4">Pastel de cafe</p>
+                </div>
+                <div class="foto5">
+                    <p class="pie5">Pastel de chocolate</p>
+                </div>
+                <div class="foto6">
+                    <p class="pie6">Pastel de ferrero</p>
+                </div>
+                <div class="foto7">
+                    <p class="pie7">Pastel de fresa</p>
+                </div>
+                <div class="foto8">
+                    <p class="pie8">Pastel de galleta oreo</p>
+                </div>
+                <div class="foto9">
+                    <p class="pie9">Pastel de moka</p>
+                </div>
+                <div class="foto10">
+                    <p class="pie10">Pastel de patricio</p>
+                </div>
+                <div class="foto11">
+                    <p class="pie11">Pastel de piñon</p>
+                </div>
+                <div class="foto12">
+                    <p class="pie12">Pastel estilo campestre</p>
+                </div>
+                <div class="foto13">
+                    <p class="pie13">Cheescake Tradicional</p>
+                </div>
+            </div>
+        </section>
     </main>
+    <footer class="pie-pagina">
+        <div class="grupo1">
+            <div class="box">
+                <h3>UBICACION</h3>
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d942.8793459982555!2d-98.20041223641437!3d19.040976700365537!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85cfc0c2b59d0fa7%3A0x122edf772540c48c!2sC.%2016%20de%20Septiembre%20903%2C%20Centro%20hist%C3%B3rico%20de%20Puebla%2C%2072000%20Puebla%2C%20Pue.!5e0!3m2!1ses-419!2smx!4v1669059122683!5m2!1ses-419!2smx"
+                    width="150" height="150" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+            <div class="box">
+                <h3>SOBRE NOSOTROS</h3>
+                <p>
+                    Somos una empresa mexicana con mas de 25 años de experiencia en Pastelería,
+                    Repostería y Panificación. Nuestra Especialidad es la decoración personalizada
+                    de Pasteles en Fondant para Bodas, XV años, Baby shower, Bautizo, Primera comunión,
+                    Cumpleaños, Fiestas tema, Corporativos, Aniversarios, De temporada, Infantiles y
+                    todo tipo de eventos.
+                </p>
+            </div>
+            <div class="box">
+                <h3>SIGUENOS</h3>
+                <div class="redsocial">
+                    <a href="https://www.facebook.com/cocoapasteleriapuebla" target="_blank">
+                        <iconify-icon icon="ic:baseline-facebook"></iconify-icon></a>
+                    <a href="https://www.google.com/maps/place/C.+16+de+Septiembre+903,
+                    +Centro+hist%C3%B3rico+de+Puebla,+72000+Puebla,+Pue./@19.041125,-98.20073,
+                    18z/data=!4m6!3m5!1s0x85cfc0c2b59d0fa7:0x122edf772540c48c!8m2!3d19.0411245!4d-98
+                    .2007302!16s%2Fg%2F11c13s6qbw?hl=es-419&gl=MX" target="_blank"><iconify-icon
+                            icon="ic:outline-place">
+                        </iconify-icon></a>
+                    <a href=""></a>
+                </div>
+            </div>
+        </div>
+        <div class="grupo2">
+            <small>&copy;2023 <b>Reposteria</b> -Todos los derechos reservados</small>
+        </div>
+    </footer>
+    <script src="https://code.iconify.design/iconify-icon/1.0.3/iconify-icon.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>
