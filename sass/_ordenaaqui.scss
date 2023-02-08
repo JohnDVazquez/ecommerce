@@ -35,13 +35,13 @@ main{
         .galeria{
             display: inline-flex;
                 flex-wrap: wrap;
-                flex: 200px;
-                gap: 10px;
+                flex: content;
+                gap: 5rem;
             .foto1 {
                 background-image: url("/imagenes/Pastel c meme.png");
                 background-size: cover;
-                width: 19rem;
-                height: 11rem;
+                width: 22rem;
+                height: 14rem;
                 margin: 1rem;
 
                 .pie1 {
@@ -53,8 +53,8 @@ main{
             .foto2 {
                 background-image: url("/imagenes/pastel chocolate y fresas.PNG");
                 background-size: cover;
-                width: 19rem;
-                height: 11rem;
+                width: 22rem;
+                height: 14rem;
                 margin: 1rem;
 
                 .pie2 {
@@ -66,8 +66,8 @@ main{
             .foto3 {
                 background-image: url("/imagenes/Pastel con diseño vw.jpeg");
                 background-size: cover;
-                width: 19rem;
-                height: 11rem;
+                width: 22rem;
+                height: 14rem;
                 margin: 1rem;
 
                 .pie3 {
@@ -79,8 +79,8 @@ main{
             .foto4 {
                 background-image: url("/imagenes/Pastel de cafe.png");
                 background-size: cover;
-                width: 19rem;
-                height: 11rem;
+                width: 22rem;
+                height: 14rem;
                 margin: 1rem;
 
                 .pie4 {
@@ -92,8 +92,8 @@ main{
             .foto5 {
                 background-image: url("/imagenes/pastel de chocolate.jpg");
                 background-size: cover;
-                width: 19rem;
-                height: 11rem;
+                width: 22rem;
+                height: 14rem;
                 margin: 1rem;
 
                 .pie5 {
@@ -105,8 +105,8 @@ main{
             .foto6 {
                 background-image: url("/imagenes/pastel de ferrero.jpg");
                 background-size: cover;
-                width: 19rem;
-                height: 11rem;
+                width: 22rem;
+                height: 14rem;
                 margin: 1rem;
 
                 .pie6 {
@@ -118,8 +118,8 @@ main{
             .foto7 {
                 background-image: url("/imagenes/pastel de fresa.jpg");
                 background-size: cover;
-                width: 19rem;
-                height: 11rem;
+                width: 22rem;
+                height: 14rem;
                 margin: 1rem;
 
                 .pie7 {
@@ -131,8 +131,8 @@ main{
             .foto8 {
                 background-image: url("/imagenes/pastel de galleta oreo.png");
                 background-size: cover;
-                width: 19rem;
-                height: 11rem;
+                width: 22rem;
+                height: 14rem;
                 margin: 1rem;
 
                 .pie8 {
@@ -144,8 +144,8 @@ main{
             .foto9 {
                 background-image: url("/imagenes/Pastel de moka.jpg");
                 background-size: cover;
-                width: 19rem;
-                height: 11rem;
+                width: 22rem;
+                height: 14rem;
                 margin: 1rem;
 
                 .pie9 {
@@ -157,8 +157,8 @@ main{
             .foto10 {
                 background-image: url("/imagenes/Pastel de patricio.jpg");
                 background-size: cover;
-                width: 19rem;
-                height: 11rem;
+                width: 22rem;
+                height: 14rem;
                 margin: 1rem;
 
                 .pie10 {
@@ -170,8 +170,8 @@ main{
             .foto11 {
                 background-image: url("/imagenes/Pastel de piñon.jpg");
                 background-size: cover;
-                width: 19rem;
-                height: 11rem;
+                width: 22rem;
+                height: 14rem;
                 margin: 1rem;
 
                 .pie11 {
@@ -183,8 +183,8 @@ main{
             .foto12 {
                 background-image: url("/imagenes/Pastel estilo campestre.jpg");
                 background-size: cover;
-                width: 19rem;
-                height: 11rem;
+                width: 22rem;
+                height: 14rem;
                 margin: 1rem;
 
                 .pie12 {
@@ -196,8 +196,8 @@ main{
             .foto13 {
                 background-image: url("/imagenes/cheescake.jpeg");
                 background-size: cover;
-                width: 19rem;
-                height: 11rem;
+                width: 22rem;
+                height: 14rem;
                 margin: 1rem;
 
                 .pie13 {
