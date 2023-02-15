@@ -47,6 +47,10 @@ header nav .contenedorNavbar div div .contadorCarrito {
 .main-index .section1 h5 {
   color: black;
 }
+.main-index .videoYoutube {
+  text-align: center;
+  margin-bottom: 5rem;
+}
 .main-index .section2 div h2 {
   text-align: center;
 }
