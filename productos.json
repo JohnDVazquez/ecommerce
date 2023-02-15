@@ -1,0 +1,20 @@
+[
+    {
+        "id": 50,
+        "nombre": "Pastel con meme",
+        "precio": 350,
+        "img": "../imagenes/Pastel c meme.png"
+    },
+    {
+        "id": 51,
+        "nombre": "Pastel de cafe",
+        "precio": 350,
+        "img": "../imagenes/Pastel de cafe.png"
+    },
+    {
+        "id": 52,
+        "nombre": "Pastel de fresa",
+        "precio": 350,
+        "img": "../imagenes/Pastel de fresa.jpg"
+    }
+]
