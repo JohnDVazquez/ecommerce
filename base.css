@@ -1,154 +1,18 @@
-header {
-  position: sticky;
-  top: 1px;
-  z-index: 5;
-}
-header nav .logo {
-  width: 4rem;
-  border-radius: 10px;
-  border: black 2px solid;
-  margin: 1rem;
-}
-header nav .btncarrito {
-  height: 5rem;
-  width: 10rem;
-  border-radius: 5px;
-  border: white 2px solid;
-  color: black;
-}
+/* Error: Undefined variable.
+ *    ,
+ * 28 |                     border-color: $beigePaleta;
+ *    |                                   ^^^^^^^^^^^^
+ *    '
+ *   sass\_main.scss 28:35  @import
+ *   sass\_base.scss 2:9    root stylesheet */
 
-.main-index {
-  padding-left: 1rem;
-  padding-right: 1rem;
-  padding-bottom: 1rem;
+body::before {
+  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
+      "Droid Sans Mono", monospace, monospace;
+  white-space: pre;
+  display: block;
+  padding: 1em;
+  margin-bottom: 1em;
+  border-bottom: 2px solid black;
+  content: "Error: Undefined variable.\a    \2577 \a 28 \2502                      border-color: $beigePaleta;\d\a    \2502                                    ^^^^^^^^^^^^\a    \2575 \a   sass\\_main.scss 28:35  @import\a   sass\\_base.scss 2:9    root stylesheet";
 }
-.main-index section div h2 {
-  text-align: center;
-}
-.main-index section div .contmaspedidos {
-  display: inline-flex;
-  flex-wrap: wrap;
-  flex: 200px;
-  gap: 10px;
-}
-.main-index section div .contmaspedidos .contimg-1 {
-  background-image: url("/imagenes/pastel de chocolate.jpg");
-  background-size: cover;
-  width: 19rem;
-  height: 11rem;
-  margin: 1rem;
-}
-.main-index section div .contmaspedidos .contimg-1 .timg-1 {
-  text-align: center;
-  color: transparent rgba(0, 0, 0, 0.6);
-  background-color: rgba(255, 255, 255, 0.7);
-}
-.main-index section div .contmaspedidos .contimg-2 {
-  background-image: url("/imagenes/pastel de ferrero.jpg");
-  background-size: cover;
-  width: 19rem;
-  height: 11rem;
-  margin: 1rem;
-}
-.main-index section div .contmaspedidos .contimg-2 .timg-2 {
-  text-align: center;
-  color: transparent rgba(0, 0, 0, 0.6);
-  background-color: rgba(255, 255, 255, 0.7);
-}
-.main-index section div .contmaspedidos .contimg-3 {
-  background-image: url("/imagenes/pastel de galleta oreo.png");
-  background-size: cover;
-  width: 19rem;
-  height: 11rem;
-  margin: 1rem;
-}
-.main-index section div .contmaspedidos .contimg-3 .timg-3 {
-  text-align: center;
-  color: transparent rgba(0, 0, 0, 0.6);
-  background-color: rgba(255, 255, 255, 0.7);
-}
-.main-index section div .contmaspedidos .contimg-4 {
-  background-image: url("/imagenes/pastel de fresa.jpg");
-  background-size: cover;
-  width: 19rem;
-  height: 11rem;
-  margin: 1rem;
-}
-.main-index section div .contmaspedidos .contimg-4 .timg-4 {
-  text-align: center;
-  color: transparent rgba(0, 0, 0, 0.6);
-  background-color: rgba(25, 144, 173, 0.1);
-}
-.main-index section div .contmaspedidos .contimg-5 {
-  background-image: url("/imagenes/cheescake.jpeg");
-  background-size: cover;
-  width: 19rem;
-  height: 11rem;
-  margin: 1rem;
-}
-.main-index section div .contmaspedidos .contimg-5 .timg-5 {
-  text-align: center;
-  color: transparent rgba(0, 0, 0, 0.6);
-  background-color: rgba(255, 255, 255, 0.7);
-}
-.main-index section {
-  text-align: center;
-}
-.main-index section div .cardEspecialidad {
-  position: relative;
-  left: 32%;
-  width: 30rem;
-}
-.main-index section div .cardEspecialidad .cardFondo {
-  background-color: blue;
-}
-.main-index aside {
-  position: sticky;
-  bottom: 1rem;
-  width: max-content;
-  background-color: none;
-  border-radius: 50%;
-}
-.main-index aside .imgaside {
-  width: 4rem;
-}
-
-* {
-  background-color: #B5F1CC;
-  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
-  margin: 0;
-  padding: 0;
-}
-
-footer {
-  padding-top: 2rem;
-  padding-left: 2rem;
-  padding-right: 2rem;
-  background-color: #FCC2FC;
-}
-footer * {
-  background-color: #FCC2FC;
-}
-footer .grupo1 {
-  padding-bottom: 1rem;
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-gap: 50px;
-}
-footer .grupo1 .box iframe {
-  width: 100%;
-  height: 80%;
-  display: flex;
-  justify-content: center;
-}
-
-.form-register {
-  position: relative;
-  left: 20%;
-  width: 400px;
-  background: #FF7B54;
-  color: white;
-  padding: 2rem;
-}
-
-/*# sourceMappingURL=base.css.map */

@@ -14,22 +14,21 @@
 
 <body>
     <header>
-        <div>
             <nav id="navB" class="navbar navbar-expand-lg bg-light" style="display: flex;">
-                <div class="container-fluid">
+                <div class="container-fluid contenedorNavbar">
                     <div>
                         <a href="./index.html">
                             <img src="./imagenes/reposteria logo.jpg" class="logo" alt="Logo de la pasteleria">
                         </a>
                     </div>
-                    <a class="navbar-brand" href="./index.html">Inicio</a>
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                         data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                         aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
                     </button>
-                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <div class="collapse navbar-collapse contenedorLinksNav" id="navbarSupportedContent">
                         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                            <a class="navbar-brand" href="./index.html">Inicio</a>
                             <li class="nav-item">
                                 <a class="nav-link active" aria-current="page" href="./ordena-aqui.html">Ordena Aqui</a>
                             </li>
@@ -37,38 +36,32 @@
                                 <a class="nav-link" href="./cotizar.html">Cotizar</a>
                             </li>
                         </ul>
-                    </div>
-                    <div>
-                        <a href="carrito.html" class="btncarrito">
-                            <iconify-icon icon="ic:outline-shopping-cart"></iconify-icon>
-                        </a>
+                        <div class="btn" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight"
+                            aria-controls="offcanvasRight">
+                            <iconify-icon id="iconoCarrito"
+                                icon="material-symbols:shopping-cart-outline"></iconify-icon>
+                        </div>
                     </div>
                 </div>
             </nav>
-
-        </div>
-
     </header>
     <main class="main-index">
-        <section>
+        <section class="section1">
+            <!-- OFF CANVAS-->
+            <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasRight"
+                aria-labelledby="offcanvasRightLabel">
+                <div class="offcanvas-header mt-2">
+                    <h5 class="offcanvas-title" id="offcanvasRightLabel">CARRITO DE COMPRAS</h5>
+                    <button type="button" class="btn-close btn-close-black" data-bs-dismiss="offcanvas"
+                        aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body"></div>
+            </div>
+        </section>
+        <section class="section2">
             <div>
-                <h2>Los mas pedidos</h2>
-                <div class="contmaspedidos">
-                    <div class="contimg-1">
-                        <p class="timg-1">Pastel de chocolate</p>
-                    </div>
-                    <div class="contimg-2">
-                        <p class="timg-2">Pastel de Ferrero</p>
-                    </div>
-                    <div class="contimg-3">
-                        <p class="timg-3">Pastel de Galleta Oreo</p>
-                    </div>
-                    <div class="contimg-4">
-                        <p class="timg-4">Pastel de Fresa</p>
-                    </div>
-                    <div class="contimg-5">
-                        <p class="timg-5">Cheescake Tradicional</p>
-                    </div>
+                <h2>¡Ordene Aqui!</h2>
+                <div class="contmaspedidos" id="contmaspedidos">
                 </div>
             </div>
         </section>
@@ -98,17 +91,17 @@
             <div class="box">
                 <h3>UBICACION</h3>
                 <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d942.8793459982555!2d-98.20041223641437!3d19.040976700365537!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85cfc0c2b59d0fa7%3A0x122edf772540c48c!2sC.%2016%20de%20Septiembre%20903%2C%20Centro%20hist%C3%B3rico%20de%20Puebla%2C%2072000%20Puebla%2C%20Pue.!5e0!3m2!1ses-419!2smx!4v1669059122683!5m2!1ses-419!2smx"
-                width="150" height="150" allowfullscreen="" loading="lazy"
-                referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d942.8793459982555!2d-98.20041223641437!3d19.040976700365537!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85cfc0c2b59d0fa7%3A0x122edf772540c48c!2sC.%2016%20de%20Septiembre%20903%2C%20Centro%20hist%C3%B3rico%20de%20Puebla%2C%2072000%20Puebla%2C%20Pue.!5e0!3m2!1ses-419!2smx!4v1669059122683!5m2!1ses-419!2smx"
+                    width="150" height="150" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
             <div class="box">
                 <h3>SOBRE NOSOTROS</h3>
                 <p>
                     Somos una empresa mexicana con mas de 25 años de experiencia en Pastelería,
-                    Repostería y Panificación. Nuestra Especialidad es la decoración personalizada 
-                    de Pasteles en Fondant para Bodas, XV años, Baby shower, Bautizo, Primera comunión, 
-                    Cumpleaños, Fiestas tema, Corporativos, Aniversarios, De temporada, Infantiles y 
+                    Repostería y Panificación. Nuestra Especialidad es la decoración personalizada
+                    de Pasteles en Fondant para Bodas, XV años, Baby shower, Bautizo, Primera comunión,
+                    Cumpleaños, Fiestas tema, Corporativos, Aniversarios, De temporada, Infantiles y
                     todo tipo de eventos.
                 </p>
             </div>
@@ -120,8 +113,9 @@
                     <a href="https://www.google.com/maps/place/C.+16+de+Septiembre+903,
                     +Centro+hist%C3%B3rico+de+Puebla,+72000+Puebla,+Pue./@19.041125,-98.20073,
                     18z/data=!4m6!3m5!1s0x85cfc0c2b59d0fa7:0x122edf772540c48c!8m2!3d19.0411245!4d-98
-                    .2007302!16s%2Fg%2F11c13s6qbw?hl=es-419&gl=MX" target="_blank"><iconify-icon icon="ic:outline-place">
-                    </iconify-icon></a>
+                    .2007302!16s%2Fg%2F11c13s6qbw?hl=es-419&gl=MX" target="_blank"><iconify-icon
+                            icon="ic:outline-place">
+                        </iconify-icon></a>
                     <a href=""></a>
                 </div>
             </div>

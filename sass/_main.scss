@@ -3,89 +3,56 @@
     padding-right: 1rem;
     padding-bottom: 1rem;
 
-    section {
+    .section1 {
+        color: black;
+
+        h5 {
+            color: black;
+
+        }
+    }
+
+    .section2 {
         div {
             h2 {
                 text-align: center;
             }
-
-            .contmaspedidos {
-                display: inline-flex;
+            .contmaspedidos{
+                display: flex; 
+                justify-content: space-evenly;
+                gap: 30px;
                 flex-wrap: wrap;
-                flex: 200px;
-                gap: 10px;
-
-                .contimg-1 {
-                    background-image: url("/imagenes/pastel de chocolate.jpg");
-                    background-size: cover;
-                    width: 19rem;
-                    height: 11rem;
-                    margin: 1rem;
-
-                    .timg-1 {
-                        text-align: center;
-                        color: transparent rgb(0, 0, 0, 0.6);
-                        background-color: rgba(255, 255, 255, 0.7);
+                padding: 0 5rem;
+                .cardComidas {
+                    width: 18rem;
+                    border-color: $beigePaleta;
+                    .imgComidas {
+                        height: 200px;
+                        object-fit: cover;
                     }
-                }
-
-                .contimg-2 {
-                    background-image: url("/imagenes/pastel de ferrero.jpg");
-                    background-size: cover;
-                    width: 19rem;
-                    height: 11rem;
-                    margin: 1rem;
-
-                    .timg-2 {
-                        text-align: center;
-                        color: transparent rgb(0, 0, 0, 0.6);
-                        background-color: rgba(255, 255, 255, 0.7);
-                    }
-                }
-
-                .contimg-3 {
-                    background-image: url("/imagenes/pastel de galleta oreo.png");
-                    background-size: cover;
-                    width: 19rem;
-                    height: 11rem;
-                    margin: 1rem;
-
-                    .timg-3 {
-                        text-align: center;
-                        color: transparent rgb(0, 0, 0, 0.6);
-                        background-color: rgba(255, 255, 255, 0.7);
-                    }
-                }
-
-                .contimg-4 {
-                    background-image: url("/imagenes/pastel de fresa.jpg");
-                    background-size: cover;
-                    width: 19rem;
-                    height: 11rem;
-                    margin: 1rem;
-
-                    .timg-4 {
-                        text-align: center;
-                        color: transparent rgb(0, 0, 0, 0.6);
-                        background-color: rgba(25, 144, 173, 0.1);
-                    }
-                }
-
-                .contimg-5 {
-                    background-image: url("/imagenes/cheescake.jpeg");
-                    background-size: cover;
-                    width: 19rem;
-                    height: 11rem;
-                    margin: 1rem;
-
-                    .timg-5 {
-                        text-align: center;
-                        color: transparent rgb(0, 0, 0, 0.6);
-                        background-color: rgba(255, 255, 255, 0.7);
+                    .cuerpoCard {
+                        background-color: $negroPaleta;
+                        .tituloComida {
+                            color: $blancoPaleta;
+                            font-size: 20px;
+                        }
+                        .precioComida {
+                            @extend .tituloComida; 
+                            font-size: 15px;
+                            margin: 1.5rem 0;
+                        }
+                        .btnAgregarCarrito {
+                            background-color: $celestePaleta;
+                            color: $blancoPaleta;
+                            width: 100%;
+                            margin: 0 auto;
+                            &:hover {
+                                background-color: #2c4b4d;
+                            }
+                        }
                     }
                 }
             }
-
         }
     }
 
@@ -105,18 +72,17 @@
             }
         }
     }
-        
 
-    aside{
+
+    aside {
         position: sticky;
         bottom: 1rem;
         width: max-content;
         background-color: none;
         border-radius: 50%;
-        .imgaside{
+
+        .imgaside {
             width: 4rem;
         }
     }
 }
-
-
