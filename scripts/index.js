@@ -1,7 +1,7 @@
 const pasteles = [
-    {id:1, nombre:"Pastel con diseño de meme", precio: 350, img:"../imagenes/Pastel c meme.jpeg"},
+    {id:1, nombre:"Pastel con diseño de meme", precio: 350, img:"../imagenes/Pastel c meme.png"},
     {id:2, nombre:"Pastel de chocolate y fresas", precio: 400, img:"../imagenes/pastel chocolate y fresas.PNG"},
-    {id:3, nombre:"Pastel de vw", precio: 340, img:"../imagenes/Pastel con diseño vw.jpeg"},
+    {id:3, nombre:"Pastel con diseño camioneta vw", precio: 340, img:"../imagenes/Pastel con diseño vw.jpeg"},
     {id:4, nombre:"Pastel de cafe", precio: 250, img:"../imagenes/Pastel de cafe.png"},
     {id:5, nombre:"Pastel de chocolate", precio: 450, img:"../imagenes/pastel de chocolate.jpg"},
     {id:6, nombre:"Pastel de ferrero", precio: 450, img:"../imagenes/pastel de ferrero.jpg"},

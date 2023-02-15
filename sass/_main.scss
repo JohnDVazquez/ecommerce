@@ -25,15 +25,15 @@
                 padding: 0 5rem;
                 .cardComidas {
                     width: 18rem;
-                    border-color: $beigePaleta;
+                    border:black solid 3px;
                     .imgComidas {
                         height: 200px;
                         object-fit: cover;
                     }
                     .cuerpoCard {
-                        background-color: $negroPaleta;
+                        
                         .tituloComida {
-                            color: $blancoPaleta;
+                            color:black;
                             font-size: 20px;
                         }
                         .precioComida {
@@ -42,8 +42,8 @@
                             margin: 1.5rem 0;
                         }
                         .btnAgregarCarrito {
-                            background-color: $celestePaleta;
-                            color: $blancoPaleta;
+                            background-color: #1e99a0;
+                            color:#FFFFFF;
                             width: 100%;
                             margin: 0 auto;
                             &:hover {
