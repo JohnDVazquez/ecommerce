@@ -19,6 +19,17 @@ header nav .contenedorNavbar div div #iconoCarrito {
   border: white 2px solid;
   color: black;
 }
+header nav .contenedorNavbar div div .contadorCarrito {
+  color: white;
+  margin: 0;
+  background-color: #1e99a0;
+  height: 24px;
+  width: 24px;
+  border-radius: 100%;
+  text-align: center;
+  font-size: 17px;
+  font-weight: 500;
+}
 
 .main-index {
   padding-left: 1rem;
@@ -27,6 +38,11 @@ header nav .contenedorNavbar div div #iconoCarrito {
 }
 .main-index .section1 {
   color: black;
+}
+.main-index .section1 .productosEnCarrito {
+  color: black;
+  display: flex;
+  justify-content: space-between;
 }
 .main-index .section1 h5 {
   color: black;

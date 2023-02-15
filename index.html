@@ -14,36 +14,33 @@
 
 <body>
     <header>
-            <nav id="navB" class="navbar navbar-expand-lg bg-light" style="display: flex;">
-                <div class="container-fluid contenedorNavbar">
-                    <div>
-                        <a href="./index.html">
-                            <img src="./imagenes/reposteria logo.jpg" class="logo" alt="Logo de la pasteleria">
-                        </a>
-                    </div>
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                        aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <div class="collapse navbar-collapse contenedorLinksNav" id="navbarSupportedContent">
-                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                            <a class="navbar-brand" href="./index.html">Inicio</a>
-                            <li class="nav-item">
-                                <a class="nav-link active" aria-current="page" href="./ordena-aqui.html">Ordena Aqui</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="./cotizar.html">Cotizar</a>
-                            </li>
-                        </ul>
-                        <div class="btn" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight"
-                            aria-controls="offcanvasRight">
-                            <iconify-icon id="iconoCarrito"
-                                icon="material-symbols:shopping-cart-outline"></iconify-icon>
-                        </div>
+        <nav id="navB" class="navbar navbar-expand-lg bg-light" style="display: flex;">
+            <div class="container-fluid contenedorNavbar">
+                <div>
+                    <a href="./index.html">
+                        <img src="./imagenes/reposteria logo.jpg" class="logo" alt="Logo de la pasteleria">
+                    </a>
+                </div>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse contenedorLinksNav" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <a class="navbar-brand" href="./index.html">Inicio</a>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./cotizar.html">Cotizar</a>
+                        </li>
+                    </ul>
+                    <div class="btn" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight"
+                        aria-controls="offcanvasRight">
+                        <iconify-icon id="iconoCarrito" icon="material-symbols:shopping-cart-outline"></iconify-icon>
+                        <p id="contadorCarrito"></p>
                     </div>
                 </div>
-            </nav>
+            </div>
+        </nav>
     </header>
     <main class="main-index">
         <section class="section1">
@@ -55,7 +52,7 @@
                     <button type="button" class="btn-close btn-close-black" data-bs-dismiss="offcanvas"
                         aria-label="Close"></button>
                 </div>
-                <div class="offcanvas-body"></div>
+                <div class="offcanvas-body" id="contenidoCarrito"></div>
             </div>
         </section>
         <section class="section2">

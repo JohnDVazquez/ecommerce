@@ -5,6 +5,11 @@
 
     .section1 {
         color: black;
+        .productosEnCarrito{
+            color: black;
+            display: flex;
+            justify-content: space-between;
+        }
 
         h5 {
             color: black;

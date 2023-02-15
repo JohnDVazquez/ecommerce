@@ -7,20 +7,23 @@
 
 header {
   position: sticky;
-  top: 1px;
+  top: 0;
   z-index: 5;
 }
-header nav .logo {
+header nav .contenedorNavbar {
+  display: flex;
+  justify-content: space-between;
+}
+header nav .contenedorNavbar .logo {
   width: 4rem;
   border-radius: 10px;
   border: black 2px solid;
   margin: 1rem;
 }
-header nav .btncarrito {
-  height: 5rem;
-  width: 10rem;
+header nav .contenedorNavbar div div #iconoCarrito {
+  font-size: 30px;
   border-radius: 5px;
-  border: white 2px solid;
+  border: black 2px solid;
   color: black;
 }
 
