@@ -28,12 +28,7 @@
 //console.log(`El resultado de la suma es ${z}`);
 
 //console.log(x == y);
-const carrito = [];
 
-const agregarAlCarrito = (producto, carrito) => {
-    carrito.push(producto);
-    console.log("Se agrego con exito el producto al carrito!");
-}
 
 const pasteles = [
     {id:1, nombre:"Pastel con diseño de meme", precio: 350, img:"img.jpg"},
@@ -51,6 +46,34 @@ const pasteles = [
     {id:13, nombre:"Cheescake tradicional", precio: 300, img:"img.jpg"},
 ];
 
-for (let i=0; i < pasteles.length; i++){
-    console.log ("Array completo: ", pasteles[i]);
+const carrito = [];
+
+const agregarAlCarrito = (producto, carrito) => {
+    carrito.push(producto);
+    console.log("Se agrego con exito el producto al carrito!");
 }
+
+agregarAlCarrito(pasteles[0], carrito);
+agregarAlCarrito(pasteles[1], carrito);
+agregarAlCarrito(pasteles[5], carrito);
+
+console.log("Carrito de compras", carrito);
+
+let suma = 0;
+for (let i=0; i < carrito.length; i++){
+    console.log ("TOTAL DEL CARRITO DE: $ ", suma += carrito[i].precio);
+}
+
+//pasteles.forEach(pasteles => {
+    console.log(pasteles.nombre)
+//});
+
+//FILTER
+
+const pastelesFiltrado = pasteles.filter(item => item.precio > 400);
+
+console.log("Los pasteles mas caros del menu son :" , pastelesFiltrado);
+
+const filtradoNombre = pasteles.filter(item => item.nombre.includes("Ch"));
+
+console.log("Los productos que contienen c, son: ", filtradoNombre);
