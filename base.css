@@ -1,4 +1,5 @@
 header {
+  background-color: #6bdd97;
   position: sticky;
   top: 0;
   z-index: 5;
@@ -32,6 +33,7 @@ header nav .contenedorNavbar div div .contadorCarrito {
 }
 
 .main-index {
+  background-color: #B5F1CC;
   padding-left: 1rem;
   padding-right: 1rem;
   padding-bottom: 1rem;
@@ -47,9 +49,13 @@ header nav .contenedorNavbar div div .contadorCarrito {
 .main-index .section1 h5 {
   color: black;
 }
-.main-index .videoYoutube {
+.main-index .contenedorVideo {
   text-align: center;
+}
+.main-index .contenedorVideo .videoYoutube {
   margin-bottom: 5rem;
+  width: 560px;
+  height: 315px;
 }
 .main-index .section2 div h2 {
   text-align: center;
@@ -108,33 +114,15 @@ header nav .contenedorNavbar div div .contadorCarrito {
   width: 4rem;
 }
 
+@media screen and (max-width: 560px) {
+  .videoYoutube {
+    width: 300px;
+  }
+}
 * {
-  background-color: #B5F1CC;
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
   margin: 0;
   padding: 0;
-}
-
-footer {
-  padding-top: 2rem;
-  padding-left: 2rem;
-  padding-right: 2rem;
-  background-color: #FCC2FC;
-}
-footer * {
-  background-color: #FCC2FC;
-}
-footer .grupo1 {
-  padding-bottom: 1rem;
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-gap: 50px;
-}
-footer .grupo1 .box iframe {
-  width: 100%;
-  height: 80%;
-  display: flex;
-  justify-content: center;
 }
 
 .form-register {

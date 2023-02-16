@@ -1,11 +1,13 @@
 .main-index {
+    background-color: #B5F1CC;
     padding-left: 1rem;
     padding-right: 1rem;
     padding-bottom: 1rem;
 
     .section1 {
         color: black;
-        .productosEnCarrito{
+
+        .productosEnCarrito {
             color: black;
             display: flex;
             justify-content: space-between;
@@ -16,44 +18,57 @@
 
         }
     }
-    .videoYoutube{
+
+    .contenedorVideo {
         text-align: center;
-        margin-bottom: 5rem;
+        .videoYoutube {
+            margin-bottom: 5rem;
+            width: 560px;
+            height: 315px;
+        }
     }
+
     .section2 {
         div {
             h2 {
                 text-align: center;
             }
-            .contmaspedidos{
-                display: flex; 
+
+            .contmaspedidos {
+                display: flex;
                 justify-content: space-evenly;
                 gap: 30px;
                 flex-wrap: wrap;
                 padding: 0 5rem;
+
                 .cardComidas {
                     width: 18rem;
-                    border:black solid 3px;
+                    border: black solid 3px;
+
                     .imgComidas {
                         height: 200px;
                         object-fit: cover;
                     }
+
                     .cuerpoCard {
-                        
+
                         .tituloComida {
-                            color:black;
+                            color: black;
                             font-size: 20px;
                         }
+
                         .precioComida {
-                            @extend .tituloComida; 
+                            @extend .tituloComida;
                             font-size: 15px;
                             margin: 1.5rem 0;
                         }
+
                         .btnAgregarCarrito {
                             background-color: #1e99a0;
-                            color:#FFFFFF;
+                            color: #FFFFFF;
                             width: 100%;
                             margin: 0 auto;
+
                             &:hover {
                                 background-color: #2c4b4d;
                             }
@@ -92,5 +107,11 @@
         .imgaside {
             width: 4rem;
         }
+    }
+}
+
+@media screen and (max-width: 560px) {
+    .videoYoutube {
+        width: 300px;
     }
 }

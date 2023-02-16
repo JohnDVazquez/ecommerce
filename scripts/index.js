@@ -1,5 +1,6 @@
 const contadorCarrito = document.getElementById("contadorCarrito");
 const contenidoCarrito = document.getElementById("contenidoCarrito");
+const botonEliminar = document.getElementById("botonEliminar");
 
 const pasteles = [
     {id:1, nombre:"Pastel con diseño de meme", precio: 350, img:"../imagenes/Pastel c meme.png", cantidad: 1},
@@ -19,19 +20,7 @@ const pasteles = [
 
 const carrito = [];
 
-const agregarAlCarrito = (id, carrito) => {
-    const productoElegido = pasteles.find (item => item.id === id);
-    carrito.push(productoElegido);
-    console.log("Se agrego con exito el producto!", carrito);
-}
 
-/////agregar contador
-const agregarContadorCarrito = () => {
-    if (carrito.length !== 0){
-        contadorCarrito.classList.add("contadorCarrito");
-        contadorCarrito.textContent = carrito.length;
-    }
-}
 
 ////////////////////////////////////////////////////////////////////////////
 
@@ -57,6 +46,20 @@ pasteles.forEach (pastel => {
     })
 
 })
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+const agregarAlCarrito = (id, carrito) => {
+    const productoElegido = pasteles.find (item => item.id === id);
+    carrito.push(productoElegido);
+    console.log("Se agrego con exito el producto!", carrito);
+}
+
+/////agregar contador
+const agregarContadorCarrito = () => {
+    if (carrito.length !== 0){
+        contadorCarrito.classList.add("contadorCarrito");
+        contadorCarrito.textContent = carrito.length;
+    }
+}
 
 
 const actualizarCarrito = () => {
@@ -66,11 +69,12 @@ const actualizarCarrito = () => {
         div.classList.add("productosEnCarrito")
         div.innerHTML = 
         `
-            <p>${pastel.cantidad}</p>    
+            <p id="cantidad">${pastel.cantidad}</p>    
             <p>${pastel.nombre}</p>    
             <p>Precio: $${pastel.precio}</p>
-            <button>Eliminar</button>
+            <button id="botonEliminar">Eliminar</button>
         `
         contenidoCarrito.appendChild(div);
     })
 }
+
