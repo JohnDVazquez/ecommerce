@@ -96,18 +96,6 @@
         }
     }
 
-
-    aside {
-        position: sticky;
-        bottom: 1rem;
-        width: max-content;
-        background-color: none;
-        border-radius: 50%;
-
-        .imgaside {
-            width: 4rem;
-        }
-    }
 }
 
 @media screen and (max-width: 560px) {
