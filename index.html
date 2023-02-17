@@ -27,17 +27,15 @@
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse contenedorLinksNav" id="navbarSupportedContent">
-                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0 fs-3">
                         <a class="navbar-brand" href="./index.html">Inicio</a>
-                        <li class="nav-item">
-                            <a class="nav-link" href="./cotizar.html">Cotizar</a>
-                        </li>
+                        <a class="navbar-brand" href="./cotizar.html">Cotizar</a>
                     </ul>
-                    <div class="btn" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight"
-                        aria-controls="offcanvasRight">
-                        <iconify-icon id="iconoCarrito" icon="material-symbols:shopping-cart-outline"></iconify-icon>
-                        <p id="contadorCarrito"></p>
-                    </div>
+                </div>
+                <div class="btn" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight"
+                    aria-controls="offcanvasRight">
+                    <iconify-icon id="iconoCarrito" icon="material-symbols:shopping-cart-outline"></iconify-icon>
+                    <p id="contadorCarrito"></p>
                 </div>
             </div>
         </nav>
@@ -48,16 +46,15 @@
             <div class="offcanvas offcanvas-end text-dark" tabindex="-1" id="offcanvasRight"
                 aria-labelledby="offcanvasRightLabel">
                 <div class="offcanvas-header mt-2">
-                    <h5 class="offcanvas-title" id="offcanvasRightLabel">CARRITO DE COMPRAS</h5>
-                    <button type="button" class="btn-close btn-close-black" data-bs-dismiss="offcanvas"
+                    <h5 class="offcanvas-title " id="offcanvasRightLabel">CARRITO DE COMPRAS</h5>
+                    <button type="button" class="btn-close btn-close-dark" data-bs-dismiss="offcanvas"
                         aria-label="Close"></button>
                 </div>
                 <div class="offcanvas-body" id="contenidoCarrito"></div>
             </div>
         </section>
-        
         <div class="contenedorVideo">
-            <h1>¿Como hacer un pastel sin usar horno?</h1>
+            <h1 class="mb-5">¿Como hacer un pastel sin usar horno?</h1>
             <iframe class="videoYoutube" src="https://www.youtube.com/embed/GL013OF8e50" title="YouTube video player"
                 frameborder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
@@ -65,17 +62,16 @@
         </div>
         <section class="section2">
             <div>
-                <h2>¡Ordene Aqui!</h2>
+                <h2 class="mb-5">¡Ordene Aqui!</h2>
                 <div class="contmaspedidos" id="contmaspedidos">
                 </div>
             </div>
         </section>
     </main>
     <footer class="pie-pagina ">
-
         <div class="container-fluid">
-            <div class="row p-5 pb-1 bg-secondary text-white text-center">
-                <div class="col-xs-12 col-md-6 col-lg-4">
+            <div class="row p-5 pb-1 bg-success text-white text-center" style="--bs-bg-opacity: .65">
+                <div class="col-xs-12 col-md-6 col-lg-4 ">
                     <p class="h4">Nosotros</p>
                     <p>
                         Somos una empresa mexicana con mas de 25 años de experiencia en Pastelería,
@@ -88,20 +84,24 @@
                 <div class="col-xs-12 col-md-6 col-lg-4">
                     <p class="h4 mb-3">Contacto</p>
                     <div class="text-white mb-2">
-                        <a href="https://www.facebook.com/cocoapasteleriapuebla" target="_blank">
-                            <iconify-icon class="text-white fs-1" icon="ic:baseline-facebook">
+                        <div class="m-2"><a href="https://www.facebook.com/cocoapasteleriapuebla" target="_blank">
+                            <iconify-icon class="text-white fs-1 me-3" icon="ic:baseline-facebook">
                             </iconify-icon>
                         </a>
                         <a href="https://www.instagram.com/explore/tags/reposteria/" target="_blank">
-                            <iconify-icon class="text-white fs-1 text text-decoration-none" icon="bi:instagram"></iconify-icon>
+                            <iconify-icon class="text-white fs-1 text text-decoration-none"
+                                icon="bi:instagram"></iconify-icon>
+                        </a></div>
+                        <div class="m-2"><a href="https://twitter.com/Reposteria" target="_blank">
+                            <iconify-icon class="text-white fs-1 me-3" icon="lucide:twitter"></iconify-icon>
                         </a>
                         <a href="https://www.google.com/maps/place/C.+16+de+Septiembre+903,
                         +Centro+hist%C3%B3rico+de+Puebla,+72000+Puebla,+Pue./@19.041125,-98.20073,
                         18z/data=!4m6!3m5!1s0x85cfc0c2b59d0fa7:0x122edf772540c48c!8m2!3d19.0411245!4d-98
                         .2007302!16s%2Fg%2F11c13s6qbw?hl=es-419&gl=MX" target="_blank">
-                        <iconify-icon class="text-white fs-1" icon="ic:outline-place">
+                            <iconify-icon class="text-white fs-1" icon="ic:outline-place">
                             </iconify-icon>
-                        </a>
+                        </a></div>
                     </div>
                 </div>
                 <div class="col-xs-12 col-md-6 col-lg-4">
@@ -113,49 +113,11 @@
                             referrerpolicy="no-referrer-when-downgrade"></iframe>
                     </div>
                 </div>
-
                 <div class="col-xs-12 pt-4">
                     <p class="text-center"><small>&copy;2023 <b>Reposteria</b> -Todos los derechos reservados</small>
                     </p>
                 </div>
             </div>
-
-            <!---- <div class="grupo1">
-            <div class="box">
-                <h3>UBICACION</h3>
-                <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d942.8793459982555!2d-98.20041223641437!3d19.040976700365537!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85cfc0c2b59d0fa7%3A0x122edf772540c48c!2sC.%2016%20de%20Septiembre%20903%2C%20Centro%20hist%C3%B3rico%20de%20Puebla%2C%2072000%20Puebla%2C%20Pue.!5e0!3m2!1ses-419!2smx!4v1669059122683!5m2!1ses-419!2smx"
-                    width="150" height="150" allowfullscreen="" loading="lazy"
-                    referrerpolicy="no-referrer-when-downgrade"></iframe>
-            </div>
-            <div class="box">
-                <h3>SOBRE NOSOTROS</h3>
-                <p>
-                    Somos una empresa mexicana con mas de 25 años de experiencia en Pastelería,
-                    Repostería y Panificación. Nuestra Especialidad es la decoración personalizada
-                    de Pasteles en Fondant para Bodas, XV años, Baby shower, Bautizo, Primera comunión,
-                    Cumpleaños, Fiestas tema, Corporativos, Aniversarios, De temporada, Infantiles y
-                    todo tipo de eventos.
-                </p>
-            </div>
-            <div class="box">
-                <h3>SIGUENOS</h3>
-                <div class="redsocial">
-                    <a href="https://www.facebook.com/cocoapasteleriapuebla" target="_blank">
-                        <iconify-icon icon="ic:baseline-facebook"></iconify-icon></a>
-                    <a href="https://www.google.com/maps/place/C.+16+de+Septiembre+903,
-                    +Centro+hist%C3%B3rico+de+Puebla,+72000+Puebla,+Pue./@19.041125,-98.20073,
-                    18z/data=!4m6!3m5!1s0x85cfc0c2b59d0fa7:0x122edf772540c48c!8m2!3d19.0411245!4d-98
-                    .2007302!16s%2Fg%2F11c13s6qbw?hl=es-419&gl=MX" target="_blank"><iconify-icon
-                            icon="ic:outline-place">
-                        </iconify-icon></a>
-                    <a href=""></a>
-                </div>
-            </div>
-        </div>
-        <div class="grupo2">
-            <small>&copy;2023 <b>Reposteria</b> -Todos los derechos reservados</small>
-        </div>-->
     </footer>
     <script src="https://code.iconify.design/iconify-icon/1.0.3/iconify-icon.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"

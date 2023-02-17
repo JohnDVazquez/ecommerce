@@ -5,8 +5,8 @@
     padding: 0;
     box-sizing: border-box;
 }
-
 header {
+    background-color: #6bdd97;
     position: sticky;
     top: 0;
     z-index: 5;
@@ -15,40 +15,47 @@ header {
         .contenedorNavbar {
             display: flex;
             justify-content: space-between;
-
+            
             .logo {
                 width: 4rem;
                 border-radius: 10px;
                 border: black 2px solid;
                 margin: 1rem;
             }
-                div {
-                    div {
-                        #iconoCarrito {
-                            font-size: 30px;
-                            border-radius: 5px;
-                            border: black 2px solid;
-                            color: black;
-                        }
-                    }
+
+            div {
+                #iconoCarrito {
+                    font-size: 30px;
+                    border-radius: 5px;
+                    border: white 2px solid;
+                    color: black;
+                }
+                .contadorCarrito {
+                    color: white;
+                    margin: 0;
+                    background-color: #1e99a0;
+                    height: 24px;
+                    width: 24px;
+                    border-radius: 100%;
+                    text-align: center;
+                    font-size: 17px;
+                    font-weight: 500;
                 }
             }
         }
     }
-
-body{
-background-image: url('imagenes/fondoformul.jpg');
 }
 
+
 main{
-    
+    background-image: url('imagenes/fondoformul.jpg');
+    padding-top: 2rem;
+    padding-bottom: 2rem;
         .form-register{
             width: 30rem;
             background: #24303c;
             padding: 2rem;
             margin: auto;
-            margin-top: 4rem;
-            margin-bottom: 4rem;
             border-radius: 4px;
             color: white;
             box-shadow: 7px 13px 37px #000;
@@ -97,27 +104,11 @@ main{
     
 }
 
-footer {
-    padding-top: 2rem;
-    padding-left: 2rem;
-    padding-right: 2rem;
-    background-color: #FCC2FC;
-    *{background-color: #FCC2FC;}
-
-    
-        .grupo1 {
-            padding-bottom: 1rem;
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            grid-gap: 50px;
-            .box{
-                iframe{
-                    width: 100%;
-                    height: 80%;
-                    display: flex;
-                    justify-content: center;
-                }
+@media only screen and (min-width: 300px) and (max-width: 586px) {
+    main{
+            .form-register{
+                width: 18rem;
             }
-        }
-    
+        
+    }
 }

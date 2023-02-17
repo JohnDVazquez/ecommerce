@@ -8,34 +8,33 @@ header {
         .contenedorNavbar {
             display: flex;
             justify-content: space-between;
-
+            
             .logo {
                 width: 4rem;
                 border-radius: 10px;
                 border: black 2px solid;
                 margin: 1rem;
             }
-                div {
-                    div {
-                        #iconoCarrito {
-                            font-size: 30px;
-                            border-radius: 5px;
-                            border: white 2px solid;
-                            color: black;
-                        }
-                        .contadorCarrito{
-                            color: white;
-                            margin: 0;
-                            background-color:  #1e99a0;
-                            height: 24px;
-                            width: 24px;
-                            border-radius: 100%;
-                            text-align: center;
-                            font-size: 17px;
-                            font-weight: 500;
-                        }
-                    }
+
+            div {
+                #iconoCarrito {
+                    font-size: 30px;
+                    border-radius: 5px;
+                    border: white 2px solid;
+                    color: black;
+                }
+                .contadorCarrito {
+                    color: white;
+                    margin: 0;
+                    background-color: #1e99a0;
+                    height: 24px;
+                    width: 24px;
+                    border-radius: 100%;
+                    text-align: center;
+                    font-size: 17px;
+                    font-weight: 500;
                 }
             }
         }
     }
+}

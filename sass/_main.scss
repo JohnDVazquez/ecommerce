@@ -3,6 +3,7 @@
     padding-left: 1rem;
     padding-right: 1rem;
     padding-bottom: 1rem;
+    
 
     .section1 {
         color: black;
@@ -21,6 +22,7 @@
 
     .contenedorVideo {
         text-align: center;
+
         .videoYoutube {
             margin-bottom: 5rem;
             width: 560px;
@@ -58,7 +60,7 @@
                         }
 
                         .precioComida {
-                            @extend .tituloComida;
+                           // @extend .tituloComida;
                             font-size: 15px;
                             margin: 1.5rem 0;
                         }
@@ -98,8 +100,14 @@
 
 }
 
-@media screen and (max-width: 560px) {
-    .videoYoutube {
-        width: 300px;
+@media only screen and (min-width: 300px) and (max-width: 586px) {
+    .main-index {
+        .contenedorVideo {
+            .videoYoutube {
+                margin-bottom: 5rem;
+                width: 290px;
+                height: 210px;
+            }
+        }
     }
 }
