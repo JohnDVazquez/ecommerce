@@ -111,7 +111,7 @@ const pasteles = [
     cantidad: 1,
   },
   {
-    id: 15,
+    id: 16,
     nombre: "Pastel de bodas est 2",
     precio: 500,
     img: "./imagenes/boda2.jpg",
