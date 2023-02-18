@@ -96,6 +96,27 @@ const pasteles = [
     img: "./imagenes/cheescake.jpeg",
     cantidad: 1,
   },
+  {
+    id: 14,
+    nombre: "Pastel de elmo",
+    precio: 300,
+    img: "./imagenes/elmo.jpg",
+    cantidad: 1,
+  },
+  {
+    id: 15,
+    nombre: "Pastel de bodas est 1",
+    precio: 500,
+    img: "./imagenes/boda1.jpg",
+    cantidad: 1,
+  },
+  {
+    id: 15,
+    nombre: "Pastel de bodas est 2",
+    precio: 500,
+    img: "./imagenes/boda2.jpg",
+    cantidad: 1,
+  },
 ];
 
 const carrito = [];
@@ -195,4 +216,5 @@ terminarCompra.addEventListener("click", () => {
   carrito.innerText="";
   carritoOffcanvas.innerText="";
 });
+
 
