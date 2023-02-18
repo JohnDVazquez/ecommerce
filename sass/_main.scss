@@ -1,9 +1,9 @@
 .main-index {
-    background-color: #B5F1CC;
+    background: linear-gradient(#fff18c, #71dbd2);
     padding-left: 1rem;
     padding-right: 1rem;
     padding-bottom: 1rem;
-    
+
 
     .section1 {
         color: black;
@@ -60,7 +60,7 @@
                         }
 
                         .precioComida {
-                           // @extend .tituloComida;
+                            // @extend .tituloComida;
                             font-size: 15px;
                             margin: 1.5rem 0;
                         }
@@ -98,15 +98,31 @@
         }
     }
 
+    aside {
+        position: sticky;
+        bottom: 1rem;
+        width: max-content;
+        border-radius: 50%;
+            #iconowhats {
+                font-size: 40px;
+                color: rgb(19, 179, 67);
+                z-index: 100;
+            }
+            #iconowhats:hover{
+                font-size: 65px;
+                color: white;
+                background-color: green;
+                border-radius: 30%;
+            }
+    }
 }
 
-@media only screen and (min-width: 300px) and (max-width: 586px) {
+@media only screen and (max-width: 586px) {
     .main-index {
         .contenedorVideo {
             .videoYoutube {
                 margin-bottom: 5rem;
-                width: 290px;
-                height: 210px;
+                width: 80%;
             }
         }
     }

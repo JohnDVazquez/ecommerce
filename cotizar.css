@@ -22,7 +22,7 @@ header nav .contenedorNavbar .logo {
   margin: 1rem;
 }
 header nav .contenedorNavbar div #iconoCarrito {
-  font-size: 30px;
+  font-size: 40px;
   border-radius: 5px;
   border: white 2px solid;
   color: black;
@@ -67,6 +67,15 @@ main .form-register .controls {
   border: 1px solid #1f53c5;
   color: white;
 }
+main .form-register .control1 {
+  width: 100%;
+  background: #24303c;
+  padding: 1rem;
+  border-radius: 4px;
+  margin-bottom: 1rem;
+  border: 1px solid #1f53c5;
+  color: white;
+}
 main .form-register p {
   height: 4rem;
   text-align: center;
@@ -74,23 +83,21 @@ main .form-register p {
 }
 main .form-register a {
   color: white;
-  text-decoration: none;
 }
 main .form-register a:hover {
   color: white;
   text-decoration: underline;
 }
-main .form-register .boton- {
+main .form-register .boton-, main .form-register .boton1 {
   width: 100%;
   background: #1f53c5;
   padding: 1rem;
   color: white;
   margin-bottom: 1rem;
 }
-
-@media only screen and (min-width: 300px) and (max-width: 586px) {
+@media only screen and (max-width: 586px) {
   main .form-register {
-    width: 18rem;
+    width: 80%;
   }
 }
 

@@ -1,3 +1,4 @@
+@import"_mixin";
 * {
     font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
         "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
@@ -25,7 +26,7 @@ header {
 
             div {
                 #iconoCarrito {
-                    font-size: 30px;
+                    font-size: 40px;
                     border-radius: 5px;
                     border: white 2px solid;
                     color: black;
@@ -67,15 +68,12 @@ main{
             }
 
             .controls{
-                width: 100%;
-                background: #24303c;
-                padding: 1rem;
-                border-radius: 4px;
-                margin-bottom: 1rem;
-                border: 1px solid #1f53c5;
-                color: white;
+                @include control;
             }
 
+            .control1{
+                @include control;
+            }
             p{
                 height: 4rem;
                 text-align: center;
@@ -84,7 +82,7 @@ main{
 
             a{
                 color: white;
-                text-decoration: none;
+                
 
             }
             a:hover{
@@ -100,14 +98,17 @@ main{
                 margin-bottom: 1rem;
 
             }
+            .boton1{
+                @extend .boton-
+            }
         }
     
 }
 
-@media only screen and (min-width: 300px) and (max-width: 586px) {
+@media only screen and (max-width: 586px) {
     main{
             .form-register{
-                width: 18rem;
+                width: 80%;
             }
         
     }

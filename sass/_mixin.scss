@@ -1,3 +1,9 @@
-@mixin alinetxt ($aline){
-    text-align: center;
+@mixin control(){
+    width: 100%;
+    background: #24303c;
+    padding: 1rem;
+    border-radius: 4px;
+    margin-bottom: 1rem;
+    border: 1px solid #1f53c5;
+    color: white;
 }
