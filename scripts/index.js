@@ -1,5 +1,8 @@
 const contadorCarrito = document.getElementById("contadorCarrito");
 const contenidoCarrito = document.getElementById("contenidoCarrito");
+const carritoOffcanvas = document.getElementById("carritoOffcanvas");
+const precioTotalCarrito = document.getElementById("precioTotalCarrito");
+const terminarCompra = document.getElementById("terminarCompra");
 
 const pasteles = [
   {
@@ -97,8 +100,6 @@ const pasteles = [
 
 const carrito = [];
 
-////////////////////////////////////////////////////////////////////////////
-
 pasteles.forEach((pastel) => {
   const div = document.createElement("div");
   div.innerHTML = `
@@ -122,10 +123,20 @@ pasteles.forEach((pastel) => {
   });
 });
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-const agregarAlCarrito = (id, carrito) => {
-  const productoElegido = pasteles.find((item) => item.id === id);
-  carrito.push(productoElegido);
-  console.log("Se agrego con exito el producto!", carrito);
+const agregarAlCarrito = (productoSeleccionado, carritoo) => {
+  const productoExiste = carrito.some(
+    (item) => item.id === productoSeleccionado
+  );
+  const productoElegido = pasteles.find(
+    (item) => item.id === productoSeleccionado
+  );
+  if (productoExiste) {
+    let precioInicial = productoElegido.precio;
+    productoElegido.cantidad++;
+    productoElegido.nprecio = productoElegido.cantidad * precioInicial;
+  } else {
+    carritoo.push(productoElegido);
+  }
 };
 
 /////agregar contador
@@ -133,21 +144,55 @@ const agregarContadorCarrito = () => {
   if (carrito.length !== 0) {
     contadorCarrito.classList.add("contadorCarrito");
     contadorCarrito.textContent = carrito.length;
+  } else {
+    contadorCarrito.textContent = "";
+    contadorCarrito.classList.remove("contadorCarrito");
   }
 };
 
 const actualizarCarrito = () => {
-  contenidoCarrito.innerHTML = "";
+  carritoOffcanvas.innerHTML = "";
   carrito.forEach((pastel) => {
-    const div = document.createElement("div");
-    div.classList.add("productosEnCarrito");
-    div.innerHTML = `
-            <p id="cantidad">${pastel.cantidad}</p>    
-            <p>${pastel.nombre}</p>    
-            <p>Precio: $${pastel.precio}</p>
-            <button id="botonEliminar">Eliminar</button>
+    tr = document.createElement("tr");
+    tr.classList.add("tablaProductos");
+    tr.innerHTML += `
+            <td>
+            <img src="${pastel.img}" alt="${pastel.nombre}">
+            </td>
+            <td class=infoProducto">${pastel.nombre}</td>
+            <td class=infoProducto>${pastel.cantidad}</td>    
+            <td class=infoProducto>${pastel.precio}</td>
+            <td class="infoProducto eliminarProducto">
+                <iconify-icon icon="material-symbols:delete-outline" class="deleteIconify" id="eliminar${pastel.id}"></iconify-icon>
+            </td>
         `;
-    contenidoCarrito.appendChild(div);
+    carritoOffcanvas.appendChild(tr);
+
+    const botonEliminar = document.getElementById(`eliminar${pastel.id}`);
+    botonEliminar.addEventListener("click", () => {
+      eliminarProducto(pastel.id);
+    });
   });
+  const totalCarrito = carrito.reduce(
+    (acumulador, pastel) => acumulador + pastel.precio,
+    0
+  );
+  precioTotalCarrito.innerText = `Precio total: $${totalCarrito}`;
 };
+
+const eliminarProducto = (productoClickeado) => {
+  const productoEliminado = carrito.find(
+    (pastel) => pastel.id === productoClickeado
+  );
+  const index = carrito.indexOf(productoEliminado);
+  carrito.splice(index, 1);
+  agregarContadorCarrito();
+  actualizarCarrito();
+};
+
+terminarCompra.addEventListener("click", () => {
+  swal("Gracias por tu compra!", "Vuelve pronto!", "success");
+  carrito.innerText="";
+  carritoOffcanvas.innerText="";
+});
 

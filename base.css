@@ -38,16 +38,41 @@ header nav .contenedorNavbar div .contadorCarrito {
   padding-right: 1rem;
   padding-bottom: 1rem;
 }
-.main-index .section1 {
-  color: black;
+.main-index .section1 div div table thead .tituloTabla {
+  text-align: center;
 }
-.main-index .section1 .productosEnCarrito {
-  color: black;
-  display: flex;
-  justify-content: space-between;
+.main-index .section1 div div table #carritoOffcanvas .tablaProductos {
+  height: 5rem;
 }
-.main-index .section1 h5 {
-  color: black;
+.main-index .section1 div div table #carritoOffcanvas .tablaProductos td {
+  width: 200px;
+}
+.main-index .section1 div div table #carritoOffcanvas .tablaProductos td img {
+  width: 85%;
+}
+.main-index .section1 div div table #carritoOffcanvas .tablaProductos .infoProducto {
+  font-size: 15px;
+  text-align: center;
+}
+.main-index .section1 div div table #carritoOffcanvas .tablaProductos .eliminarProducto {
+  font-size: 22px;
+  color: #71dbd2;
+  height: 10px;
+}
+.main-index .section1 div div table #carritoOffcanvas .tablaProductos .eliminarProducto .deleteIconify {
+  border: 1px solid #71dbd2;
+  cursor: pointer;
+}
+.main-index .section1 div .botonComprar {
+  background-color: #71dbd2;
+  padding: 0.8rem 2rem;
+  border-radius: 4px;
+  border: none;
+  width: fit-content;
+  color: white;
+}
+.main-index .section1 div .botonComprar:hover {
+  background-color: #d64b3c;
 }
 .main-index .contenedorVideo {
   text-align: center;

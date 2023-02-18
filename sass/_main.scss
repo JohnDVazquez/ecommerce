@@ -6,17 +6,51 @@
 
 
     .section1 {
-        color: black;
-
-        .productosEnCarrito {
-            color: black;
-            display: flex;
-            justify-content: space-between;
-        }
-
-        h5 {
-            color: black;
-
+        div {
+            div {
+                table {
+                    thead {
+                        .tituloTabla {
+                            text-align: center;
+                        }
+                    }
+                    #carritoOffcanvas {
+                        .tablaProductos {
+                            height: 5rem;
+                            td{
+                                width: 200px;
+                                img {
+                                    width: 85%;
+                                }
+                            }
+                            .infoProducto {
+                                font-size: 15px;
+                                text-align: center;
+                            }
+                            .eliminarProducto {
+                                font-size: 22px;
+                                color: #71dbd2;
+                                height: 10px;
+                                .deleteIconify{
+                                    border: 1px solid #71dbd2;
+                                    cursor: pointer;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            .botonComprar {
+                background-color: #71dbd2;
+                padding: 0.8rem 2rem;
+                border-radius: 4px;
+                border: none;
+                width:fit-content;
+                color: white;
+                &:hover{
+                    background-color: #d64b3c;
+                }
+            }
         }
     }
 
